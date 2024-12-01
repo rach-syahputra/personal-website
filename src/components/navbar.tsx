@@ -1,4 +1,4 @@
-import NavLink from './elements/nav-link'
+import NavLink from './nav-link'
 
 export default function Navbar() {
   return (
