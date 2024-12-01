@@ -6,5 +6,11 @@ interface DescriptionProps {
 }
 
 export default function Description({ className, children }: DescriptionProps) {
-  return <p className={cn('text-gray', className)}>{children}</p>
+  return (
+    <p
+      className={cn('text-gray max-w-full text-center sm:max-w-xl', className)}
+    >
+      {children}
+    </p>
+  )
 }

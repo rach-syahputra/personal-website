@@ -1,13 +1,14 @@
 import Description from '@/components/description'
 import Header from '@/components/header'
+import Section from '@/components/section'
 import { Github, Instagram, Mail } from 'lucide-react'
 import Link from 'next/link'
 
 export default function HomeContent() {
   return (
-    <section className='flex h-[500px] w-full flex-col items-center justify-center gap-8 px-8'>
+    <Section>
       <Header>I&rsquo;m Rachmat Syahputra</Header>
-      <Description className='max-w-xl text-center'>
+      <Description>
         A full-stack web developer who works with JavaScript Ecosystem and
         presents <span className='text-white'>high-quality</span> modern web
         application.
@@ -23,6 +24,6 @@ export default function HomeContent() {
           <Instagram color='#888888' />
         </Link>
       </div>
-    </section>
+    </Section>
   )
 }

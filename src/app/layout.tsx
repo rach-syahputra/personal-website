@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${geist.variable} font bg-dark text-light antialiased`}>
-        <div className='max-w-default mx-auto'>
+        <div className='max-w-default mx-auto w-full'>
           <Navbar />
           {children}
         </div>
