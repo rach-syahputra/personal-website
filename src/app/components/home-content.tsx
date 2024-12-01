@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function HomeContent() {
   return (
-    <Section>
+    <Section id='home' className='h-[450px]'>
       <Header>I&rsquo;m Rachmat Syahputra</Header>
       <Description>
         A full-stack web developer who works with JavaScript Ecosystem and
