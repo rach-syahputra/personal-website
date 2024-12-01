@@ -14,7 +14,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        'h-9 rounded-md px-3 text-sm transition-all duration-300 ease-out md:h-11 md:px-4 md:text-base',
+        'h-8 rounded-md px-2 text-sm transition-all duration-300 ease-out md:px-4',
         {
           'bg-light text-dark hover:bg-light-hover': variant === 'default',
           'bg-dark text-light shadow-default hover:bg-dark-hover':

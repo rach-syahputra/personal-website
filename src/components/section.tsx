@@ -9,7 +9,7 @@ export default function Section({ className, children }: SectionProps) {
   return (
     <section
       className={cn(
-        'flex h-[500px] w-full flex-col items-center justify-center gap-8 px-4 md:px-0',
+        'flex w-full flex-col items-center justify-center gap-8 px-4 md:px-0',
         className
       )}
     >
