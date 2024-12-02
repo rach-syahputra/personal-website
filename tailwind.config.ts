@@ -23,6 +23,9 @@ export default {
       },
       maxWidth: {
         default: '1200px'
+      },
+      screens: {
+        xs: '400px'
       }
     }
   },

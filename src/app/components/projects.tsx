@@ -6,7 +6,7 @@ import { projects } from '@/lib/data'
 
 export default function Projects() {
   return (
-    <Section id='projects' className='py-8'>
+    <Section id='projects' className='py-8 lg:gap-24'>
       <div className='flex flex-col gap-4'>
         <Header>Projects</Header>
         <Description>
@@ -15,7 +15,7 @@ export default function Projects() {
         </Description>
       </div>
 
-      <div className='flex w-full flex-col gap-8'>
+      <div className='flex w-full flex-col gap-8 lg:gap-16'>
         {projects.map((project) => (
           <ProjectItem key={project.id} project={project} />
         ))}
