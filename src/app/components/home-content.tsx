@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function HomeContent() {
   return (
-    <Section id='home' className='relative h-screen'>
+    <Section id='home' className='relative py-32 lg:h-screen lg:py-0'>
       <Header>I&rsquo;m Rachmat Syahputra</Header>
       <Description className='px-8'>
         A full-stack web developer who works with JavaScript Ecosystem and
