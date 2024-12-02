@@ -14,13 +14,13 @@ export default function HomeContent() {
         application.
       </Description>
       <div className='flex gap-6'>
-        <Link href='#'>
+        <Link href='https://github.com/rach-syahputra/' target='_blank'>
           <Github color='#888888' />
         </Link>
-        <Link href='#'>
+        <Link href='mailto:rach.syahputra@gmail.com' target='_blank'>
           <Mail color='#888888' />
         </Link>
-        <Link href='#'>
+        <Link href='https://www.instagram.com/rach.syahputra/' target='_blank'>
           <Instagram color='#888888' />
         </Link>
       </div>
