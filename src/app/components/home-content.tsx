@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 export default function HomeContent() {
   return (
-    <Section id='home' className='h-[450px]'>
+    <Section id='home' className='relative h-screen'>
       <Header>I&rsquo;m Rachmat Syahputra</Header>
-      <Description>
+      <Description className='px-8'>
         A full-stack web developer who works with JavaScript Ecosystem and
         presents <span className='text-white'>high-quality</span> modern web
         application.
