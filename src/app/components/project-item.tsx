@@ -1,41 +1,41 @@
 import Badge from '@/components/badge'
 import Button from '@/components/button'
 import Description from '@/components/description'
-import ImageCollage, { Images } from '@/components/image-collage'
+import ImageCollage from '@/components/image-collage'
 import Title from '@/components/title'
-import { Colors } from '@/lib/types'
+import { Colors, Images } from '@/lib/types'
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 
 interface ProjectItemProps {
-  title: string
-  images: Images
-  techStacks: {
-    name: string
-    color: Colors
-  }[]
-  description: string
-  link: {
-    live: string
-    code: string
+  project: {
+    title: string
+    images: Images
+    techStacks: {
+      name: string
+      color: Colors
+    }[]
+    description: string
+    link: {
+      live: string
+      code: string
+    }
   }
 }
 
-export default function ProjectItem({
-  title,
-  images,
-  techStacks,
-  description,
-  link
-}: ProjectItemProps) {
+export default function ProjectItem({ project }: ProjectItemProps) {
+  const { title, images, techStacks, description, link } = project
+
   return (
     <div className='flex w-full flex-col gap-4'>
       <div className='flex flex-col items-center justify-center gap-4 py-4'>
         <Title>{title}</Title>
         <ImageCollage images={images} />
         <div className='flex flex-wrap items-center justify-center gap-2'>
-          {techStacks.map((techStack) => (
-            <Badge color={techStack.color}>{techStack.name}</Badge>
+          {techStacks.map((techStack, index) => (
+            <Badge key={index} color={techStack.color}>
+              {techStack.name}
+            </Badge>
           ))}
         </div>
         <Description>{description}</Description>

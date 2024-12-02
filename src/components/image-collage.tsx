@@ -1,6 +1,5 @@
 import Image from 'next/image'
-
-export type Images = [string, string, string]
+import { Images } from '@/lib/types'
 
 interface ImageCollageProps {
   images: Images
