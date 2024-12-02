@@ -7,18 +7,18 @@ import { cn } from '@/lib/utils'
 export default function Navbar() {
   const navlinks = [
     {
-      id: 1,
+      id: 'home',
       name: 'Home',
       href: '#home'
     },
     {
-      id: 2,
+      id: 'projects',
       name: 'Projects',
       href: '#projects'
     }
   ]
 
-  const [active, setActive] = useState<number>(1)
+  const [active, setActive] = useState<string>('')
   const [show, setShow] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 
@@ -43,9 +43,9 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        'fixed top-6 z-10 hidden w-full max-w-default items-center justify-center opacity-0 transition-all delay-100 duration-300 ease-in-out',
+        'fixed top-6 z-10 flex w-full max-w-default items-center justify-center opacity-0 transition-all duration-300 ease-in-out',
         {
-          'flex opacity-100': show
+          'opacity-100': show
         }
       )}
     >

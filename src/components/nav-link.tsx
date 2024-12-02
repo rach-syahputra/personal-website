@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 interface NavLinkProps {
   href: string
+  id: string
   active?: boolean
-  id: number
-  setActive: Dispatch<SetStateAction<number>>
+  setActive: Dispatch<SetStateAction<string>>
   children: React.ReactNode
 }
 

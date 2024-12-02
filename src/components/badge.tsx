@@ -10,7 +10,7 @@ export default function Badge({ color, children }: BadgeProps) {
   return (
     <span
       className={cn(
-        'h-6 content-center rounded-full bg-neutral-700 bg-opacity-30 px-2 text-xs text-neutral-500',
+        'h-4 content-center rounded-full bg-neutral-700 bg-opacity-30 px-2 text-[10px] text-neutral-500 md:h-6 md:text-xs lg:text-sm',
         {
           'bg-blue-950 text-blue-500': color === 'blue',
           'bg-purple-950 text-purple-500': color === 'purple',
