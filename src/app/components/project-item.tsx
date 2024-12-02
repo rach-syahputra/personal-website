@@ -29,22 +29,20 @@ export default function ProjectItem({ project }: ProjectItemProps) {
   return (
     <div className='flex w-full flex-col gap-4'>
       <div className='flex w-full flex-col items-center justify-center gap-8 py-4'>
-        <Title className='lg:hidden'>{title}</Title>
-        <div className='flex flex-col gap-4 lg:flex-row lg:gap-8'>
-          <div className='flex flex-col items-center justify-center gap-4'>
-            <ImageCollage images={images} />
-            <div className='xs:w-full flex w-[300px] max-w-[380px] flex-wrap items-center justify-center gap-2 lg:w-[500px] lg:max-w-full'>
-              {techStacks.map((techStack, index) => (
-                <Badge key={index} color={techStack.color}>
-                  {techStack.name}
-                </Badge>
-              ))}
-            </div>
-          </div>
-          <div className='flex flex-col items-center justify-center gap-4 py-2 lg:items-start lg:justify-between'>
-            <div className='flex flex-col gap-4'>
-              <Title className='hidden lg:block'>{title}</Title>
-              <Description className='lg:text-left'>{description}</Description>
+        <Title className='xl:hidden'>{title}</Title>
+        <div className='flex flex-col items-center justify-center gap-4 xl:flex-row xl:gap-8'>
+          <ImageCollage images={images} />
+          <div className='flex flex-1 flex-col items-center justify-center gap-4 xl:h-[290px] xl:items-start xl:justify-between'>
+            <div className='flex flex-col items-center justify-center gap-4 xl:items-start'>
+              <Title className='hidden xl:block'>{title}</Title>
+              <div className='xs-w-full flex w-[300px] max-w-[380px] flex-wrap items-center justify-center gap-2 xs:w-full lg:max-w-full xl:justify-start'>
+                {techStacks.map((techStack, index) => (
+                  <Badge key={index} color={techStack.color}>
+                    {techStack.name}
+                  </Badge>
+                ))}
+              </div>
+              <Description className='xl:text-left'>{description}</Description>
             </div>
             <div className='flex gap-4'>
               <Link href={link.live}>
