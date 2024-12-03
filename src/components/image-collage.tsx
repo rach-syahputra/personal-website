@@ -14,7 +14,7 @@ const styles = {
   top: ['top-0', 'top-[5%]', 'top-[15%]'],
   rotate: ['-rotate-6', '-rotate-3', 'rotate-0'],
   width: [
-    'w-[108px] xs:w-[99px] md:w-[124px] lg:w-[163px]',
+    'w-[81px] xs:w-[99px] md:w-[124px] lg:w-[163px]',
     'w-[192px] xs:w-[234px] md:w-[293px] lg:w-[387px]',
     'w-[256px] xs:w-[313px] md:w-[391px] lg:w-[515px]'
   ],
