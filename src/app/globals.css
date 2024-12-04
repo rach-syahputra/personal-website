@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #f75f8f;
+  --dark: #0a0a0a;
+  --dark-hover: #1a1a1a;
+  --light: #ededed;
+  --light-hover: #dddddd;
+  --gray: #888888;
+}
+
 html {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -11,3 +20,70 @@ html {
 body {
   font-family: var(--font-geist);
 }
+
+/* vertical line */
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-1050 {
+  animation-delay: 1050ms;
+}
+
+.animation-delay-1100 {
+  animation-delay: 1.1s;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  left: -2.5%;
+  width: 105%;
+  height: 2px;
+  color: var(--dark);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--gray) 0 5px,
+    var(--dark) 0 10px
+  );
+  opacity: 0.2;
+}
+
+.vertical-line-animation {
+  position: absolute;
+  top: 0;
+  left: -2.5%;
+  width: 0;
+  height: 2px;
+  opacity: 0;
+  color: var(--dark);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--light) 0 5px,
+    var(--dark) 0 10px
+  );
+  animation-name: verticalLine;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes verticalLine {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  35% {
+    width: 200px;
+    opacity: 0.5;
+  }
+
+  100% {
+    left: 105%;
+    opacity: 0;
+    width: 0;
+  }
+}
+
+/*  */
