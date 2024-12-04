@@ -9,9 +9,9 @@ export default function VerticalLine({
 }) {
   return (
     <div className='relative w-full'>
-      <hr className='vertical-line' />
+      <hr className='vertical-line absolute left-[-2.5%] top-0 h-0.5 w-[105%] text-dark' />
       <hr
-        className={`vertical-line-animation animation-delay-${animationDelay}`}
+        className={`vertical-line-animation animation-delay-${animationDelay} absolute left-[-2.5%] top-0 h-0.5 w-0 text-dark`}
       />
     </div>
   )
