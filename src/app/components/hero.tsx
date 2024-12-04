@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Description from '@/components/description'
 import Header from '@/components/header'
 import Section from '@/components/section'
-import VerticalLine from '@/components/vertical-line'
 import Image from 'next/image'
+import HorizontalLine from '@/components/horizontal-line'
 
 export default function Hero() {
   return (
@@ -13,14 +13,14 @@ export default function Hero() {
         <Image src='/professional-photo.png' alt='professional photo' fill />
       </div>
       <Header>I&rsquo;m Rachmat Syahputra</Header>
-      <VerticalLine animationDelay='1050' />
+      <HorizontalLine animationDelay='1050' />
 
       <Description className='px-8'>
         A <span className='text-white'>full-stack web developer</span> who work
         with JavaScript Ecosystem and present high-quality modern web
         application.
       </Description>
-      <VerticalLine animationDelay='1100' />
+      <HorizontalLine animationDelay='1100' />
       <div className='flex gap-6'>
         <Link href='https://github.com/rach-syahputra/' target='_blank'>
           <Github color='#888888' />

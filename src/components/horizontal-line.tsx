@@ -2,7 +2,7 @@ import React from 'react'
 
 // the animation is generated using css in global.css
 
-export default function VerticalLine({
+export default function HorizontalLine({
   animationDelay
 }: {
   animationDelay: '1000' | '1050' | '1100'
