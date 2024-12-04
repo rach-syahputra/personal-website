@@ -6,7 +6,7 @@ import Section from '@/components/section'
 import VerticalLine from '@/components/vertical-line'
 import Image from 'next/image'
 
-export default function HomeContent() {
+export default function Hero() {
   return (
     <Section id='home' className='relative h-screen py-32 lg:py-0'>
       <div className='shadow-photo relative h-36 w-36 overflow-hidden rounded-full bg-dark-hover bg-opacity-10 lg:h-[200px] lg:w-[200px]'>
