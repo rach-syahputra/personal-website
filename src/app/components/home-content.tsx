@@ -4,16 +4,20 @@ import Description from '@/components/description'
 import Header from '@/components/header'
 import Section from '@/components/section'
 import VerticalLine from '@/components/vertical-line'
+import Image from 'next/image'
 
 export default function HomeContent() {
   return (
-    <Section id='home' className='relative py-32 lg:h-screen lg:py-0'>
-      <VerticalLine animationDelay='1000' />
+    <Section id='home' className='relative h-screen py-32 lg:py-0'>
+      <div className='shadow-photo relative h-36 w-36 overflow-hidden rounded-full bg-dark-hover bg-opacity-10 lg:h-[200px] lg:w-[200px]'>
+        <Image src='/professional-photo.png' alt='professional photo' fill />
+      </div>
       <Header>I&rsquo;m Rachmat Syahputra</Header>
       <VerticalLine animationDelay='1050' />
+
       <Description className='px-8'>
-        A full-stack web developer who work with JavaScript Ecosystem and
-        present <span className='text-white'>high-quality</span> modern web
+        A <span className='text-white'>full-stack web developer</span> who work
+        with JavaScript Ecosystem and present high-quality modern web
         application.
       </Description>
       <VerticalLine animationDelay='1100' />

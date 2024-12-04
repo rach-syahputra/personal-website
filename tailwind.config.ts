@@ -19,7 +19,9 @@ export default {
         gray: 'var(--gray)'
       },
       boxShadow: {
-        default: '0 0 0 1px rgba(237, 237, 237, 0.3)'
+        default: '0 0 0 1px rgba(237, 237, 237, 0.3)',
+        photo:
+          '0px 0px 4px 4px rgba(237, 237, 237, 0.1), 0px 0px 0px 1px rgba(237, 237, 237, 0.1) '
       },
       maxWidth: {
         default: '1200px'
