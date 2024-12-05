@@ -23,11 +23,11 @@ const styles = {
 
 export default function ImageCollage({ images }: ImageCollageProps) {
   return (
-    <div className='relative h-[170px] w-[300px] xs:h-[230px] xs:w-[380px] md:h-[260px] md:w-[470px] lg:h-[350px] lg:w-[620px] xl:max-w-full'>
+    <div className='group relative h-[170px] w-[300px] xs:h-[230px] xs:w-[380px] md:h-[260px] md:w-[470px] lg:h-[350px] lg:w-[620px] xl:max-w-full'>
       {images.map((image, index) => (
         <div
           key={index}
-          className={`${styles.left[index]} ${styles.top[index]} ${styles.rotate[index]} ${styles.width[index]} ${styles.height} absolute overflow-hidden rounded-md bg-slate-400 shadow-default`}
+          className={`${styles.left[index]} ${styles.top[index]} ${styles.rotate[index]} ${styles.width[index]} ${styles.height} absolute overflow-hidden rounded-md bg-slate-400 shadow-default transition-all duration-300 ease-in-out group-hover:scale-105`}
         >
           <Image src={image} alt='project image' fill />
         </div>
