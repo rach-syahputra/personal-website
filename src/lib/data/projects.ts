@@ -1,4 +1,4 @@
-import { Colors, Images } from './types'
+import { Colors, Images } from '../types'
 
 interface IProjects {
   id: number
