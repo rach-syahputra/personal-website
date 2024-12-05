@@ -1,11 +1,11 @@
+import { ArrowUpRight } from 'lucide-react'
+import Link from 'next/link'
 import Badge from '@/components/badge'
 import Button from '@/components/button'
 import Description from '@/components/description'
-import ImageCollage from '@/components/image-collage'
 import Title from '@/components/title'
+import ImageCollage from './image-collage'
 import { Colors, Images } from '@/lib/types'
-import { ArrowUpRight } from 'lucide-react'
-import Link from 'next/link'
 
 interface ProjectItemProps {
   project: {
