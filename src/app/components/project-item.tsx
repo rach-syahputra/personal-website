@@ -1,6 +1,6 @@
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
-import Badge from '@/components/badge'
+import Badge from '@/app/components/badge'
 import Button from '@/components/button'
 import Description from '@/components/description'
 import Title from '@/components/title'
