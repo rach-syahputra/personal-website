@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import './globals.css'
+import MobileNavbar from '@/components/mobile-navbar'
 
 const geist = Geist({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -25,7 +26,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${geist.variable} bg-dark text-light antialiased`}>
         <Navbar />
-
+        <MobileNavbar />
         <div className='mx-auto w-full max-w-default'>{children}</div>
       </body>
     </html>

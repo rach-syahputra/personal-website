@@ -6,7 +6,7 @@ import { projects } from '@/lib/data/projects'
 
 export default function Projects() {
   return (
-    <Section id='projects' className='min-h-screen py-16 lg:gap-24'>
+    <Section id='projects' className='py-16 lg:gap-24'>
       <div className='flex flex-col gap-4'>
         <Header>Projects</Header>
         <Description>

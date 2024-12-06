@@ -8,7 +8,7 @@ import HorizontalLine from '@/components/horizontal-line'
 
 export default function Hero() {
   return (
-    <Section id='home' className='relative py-32 lg:py-0'>
+    <Section id='home' className='relative lg:pt-8'>
       <div className='relative h-36 w-36 overflow-hidden rounded-full bg-dark-hover bg-opacity-10 shadow-photo lg:h-[200px] lg:w-[200px]'>
         <Image src='/professional-photo.png' alt='professional photo' fill />
       </div>

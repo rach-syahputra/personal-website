@@ -3,28 +3,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import NavLink from './nav-link'
 import { cn } from '@/lib/utils'
+import { navlinks } from '@/lib/data/navlinks'
+import Link from 'next/link'
 
 export default function Navbar() {
-  const navlinks = [
-    {
-      id: 'home',
-      name: 'Home',
-      href: '#home'
-    },
-    {
-      id: 'about',
-      name: 'About',
-      href: '#about'
-    },
-    {
-      id: 'projects',
-      name: 'Projects',
-      href: '#projects'
-    }
-  ]
-
   const [activeSection, setActiveSection] = useState<string>('')
   const [show, setShow] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
@@ -73,21 +56,26 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        'fixed top-6 z-10 flex w-full items-center justify-center opacity-0 transition-all duration-300 ease-in-out',
+        'fixed top-6 z-10 hidden w-full items-center justify-center opacity-0 transition-all duration-300 ease-in-out lg:flex',
         { 'opacity-100': show }
       )}
     >
       <ul className=':h-8 flex items-center gap-4 rounded-md bg-dark bg-opacity-90 px-3 shadow-default lg:h-9'>
-        {navlinks.map((navlink) => (
+        {navlinks?.map((navlink) => (
           <li key={navlink.id}>
-            <NavLink
+            <Link
               href={navlink.href}
-              active={activeSection === navlink.id}
-              id={navlink.id}
-              setActiveSection={setActiveSection}
+              onClick={() => setActiveSection(navlink.id)}
+              className={cn(
+                'text-sm transition-all duration-300 ease-out hover:text-white lg:text-base',
+                {
+                  'text-primary hover:text-primary':
+                    activeSection === navlink.id
+                }
+              )}
             >
               {navlink.name}
-            </NavLink>
+            </Link>
           </li>
         ))}
       </ul>
