@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
+import Navbar from '@/components/navbar'
 import './globals.css'
 
 const geist = Geist({
@@ -23,6 +24,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${geist.variable} bg-dark text-light antialiased`}>
+        <Navbar />
+
         <div className='mx-auto w-full max-w-default'>{children}</div>
       </body>
     </html>

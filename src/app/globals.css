@@ -14,14 +14,14 @@
 html {
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 body {
   font-family: var(--font-geist);
 }
 
-/* vertical line */
+/* horizontal line */
 
 .animation-delay-1000 {
   animation-delay: 1s;
@@ -35,7 +35,7 @@ body {
   animation-delay: 1.1s;
 }
 
-.vertical-line {
+.horizontal-line {
   background: repeating-linear-gradient(
     90deg,
     var(--gray) 0 5px,
@@ -44,20 +44,20 @@ body {
   opacity: 0.2;
 }
 
-.vertical-line-animation {
+.horizontal-line-animation {
   opacity: 0;
   background: repeating-linear-gradient(
     90deg,
     var(--light) 0 5px,
     var(--dark) 0 10px
   );
-  animation-name: verticalLine;
+  animation-name: horizontalLine;
   animation-duration: 800ms;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
 }
 
-@keyframes verticalLine {
+@keyframes horizontalLine {
   0% {
     left: 0;
     opacity: 0;
