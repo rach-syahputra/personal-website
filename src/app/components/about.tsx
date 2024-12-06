@@ -5,9 +5,9 @@ import Header from '@/components/header'
 import Section from '@/components/section'
 import { skills } from '@/lib/data/skills'
 
-export default function AboutMe() {
+export default function About() {
   return (
-    <Section id='aboutMe'>
+    <Section id='about'>
       <div className='flex w-full flex-col items-center justify-center gap-8'>
         <Header>About Me</Header>
         <Description>

@@ -1,12 +1,12 @@
 import Hero from './components/hero'
-import AboutMe from './components/about-me'
 import Projects from './components/projects'
+import About from './components/about'
 
 export default function Home() {
   return (
-    <main>
+    <main className='flex w-full flex-col'>
       <Hero />
-      <AboutMe />
+      <About />
       <Projects />
     </main>
   )
