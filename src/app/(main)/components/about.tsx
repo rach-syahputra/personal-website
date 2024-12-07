@@ -19,6 +19,14 @@ export default function About() {
         </Description>
 
         <Description>
+          I build modern web application to{' '}
+          <span className='font-bold text-light'>solve users problem</span>.
+          However, as a music enthusiast, Building music platforms is where my
+          passion truly shines, as it allows me to combine my love for music
+          with my web development skills to create something enjoyable.
+        </Description>
+
+        <Description>
           I am currently enhancing my expertise in full-stack web development at{' '}
           <span className='font-bold text-light'>
             Purwadhika Digital Technology School

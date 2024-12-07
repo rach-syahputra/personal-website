@@ -52,6 +52,14 @@ export const skills: ISkill[] = [
         icon: '/skills/nodejs.svg'
       },
       {
+        name: 'MySQL',
+        icon: '/skills/mysql.svg'
+      },
+      {
+        name: 'PostgreSQL',
+        icon: '/skills/postgresql.svg'
+      },
+      {
         name: 'Supabase',
         icon: '/skills/supabase.svg'
       },
