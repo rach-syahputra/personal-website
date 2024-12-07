@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
 import Navbar from '@/components/navbar'
-import './globals.css'
+import '../globals.css'
 import MobileNavbar from '@/components/mobile-navbar'
 
 const geist = Geist({

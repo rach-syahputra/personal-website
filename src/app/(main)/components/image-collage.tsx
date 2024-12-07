@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Images } from '@/lib/types'
+import { Images } from '@/lib/data/projects'
 
 interface ImageCollageProps {
   images: Images

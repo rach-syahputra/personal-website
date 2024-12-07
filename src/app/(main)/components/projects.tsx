@@ -17,7 +17,7 @@ export default function Projects() {
 
       <div className='flex w-full flex-col gap-8 lg:gap-16 xl:gap-24'>
         {projects.map((project) => (
-          <ProjectItem key={project.id} project={project} />
+          <ProjectItem key={project.id} {...project} />
         ))}
       </div>
     </Section>
