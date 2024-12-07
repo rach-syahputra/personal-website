@@ -2,7 +2,7 @@
 
 import { navlinks } from '@/lib/data/navlinks'
 import { cn } from '@/lib/utils'
-import { ChevronDown, FolderCode, Home, User } from 'lucide-react'
+import { ChevronDown, FolderCode, Home, User, Wrench } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -12,6 +12,7 @@ export default function MobileNavbar() {
   const icons: Record<string, React.JSX.Element> = {
     home: <Home color='#888888' size={18} />,
     about: <User color='#888888' size={18} />,
+    skills: <Wrench color='#888888' size={18} />,
     projects: <FolderCode color='#888888' size={18} />
   }
 
