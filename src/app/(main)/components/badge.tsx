@@ -1,4 +1,4 @@
-import { Colors } from '@/lib/types'
+import { Colors } from '@/lib/data/projects'
 import { cn } from '@/lib/utils'
 
 interface BadgeProps {
