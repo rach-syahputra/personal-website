@@ -29,7 +29,7 @@ export default function ProjectItem(project: IProject) {
               <Description className='xl:text-left'>{description}</Description>
             </div>
             <div className='flex gap-4'>
-              <Link href={link.live}>
+              <Link href={link.live} target='_blank'>
                 <Button className='group flex items-center justify-center gap-2'>
                   Live Site{' '}
                   <ArrowUpRight
