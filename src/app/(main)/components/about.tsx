@@ -1,9 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
 import Description from '@/components/description'
 import Header from '@/components/header'
 import Section from '@/components/section'
-import { skills } from '@/lib/data/skills'
 
 export default function About() {
   return (
@@ -29,23 +27,6 @@ export default function About() {
           collaborative learning, I thrive in team environments where ideas are
           shared, and solutions are crafted together.
         </Description>
-
-        <div className='flex w-full flex-col items-center justify-center gap-4'>
-          <Description>
-            Here are my current favorite{' '}
-            <span className='font-bold text-light'>tech stacks</span>:
-          </Description>
-          <ul className='flex flex-wrap items-center justify-center gap-6'>
-            {skills.map((skill, index) => (
-              <li
-                key={index}
-                className='relative flex h-8 w-8 flex-col items-center justify-center transition-all duration-300 ease-in-out lg:h-10 lg:w-10'
-              >
-                <Image src={skill.src} alt='skill icon' fill />
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </Section>
   )

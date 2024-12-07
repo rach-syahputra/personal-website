@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        'fixed top-6 z-10 hidden w-full items-center justify-center opacity-0 transition-all duration-300 ease-in-out lg:flex',
+        'fixed top-6 z-10 hidden w-full items-center justify-center opacity-0 transition-all duration-300 ease-in-out hover:opacity-100 lg:flex',
         { 'opacity-100': show }
       )}
     >
@@ -65,7 +65,6 @@ export default function Navbar() {
           <li key={navlink.id}>
             <Link
               href={navlink.href}
-              onClick={() => setActiveSection(navlink.id)}
               className={cn(
                 'text-sm transition-all duration-300 ease-out hover:text-white lg:text-base',
                 {

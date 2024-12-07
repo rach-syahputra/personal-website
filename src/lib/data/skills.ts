@@ -1,35 +1,87 @@
 export interface ISkill {
-  src: string
-  name?: string
+  title: string
+  description: string
+  techStacks: {
+    name: string
+    icon: string
+  }[]
 }
 
 export const skills: ISkill[] = [
   {
-    src: '/skills/javascript.svg',
-    name: 'Javascript'
+    title: 'Front-End',
+    description:
+      'These are the tools I use to build user interfaces and design experiences:',
+    techStacks: [
+      {
+        name: 'JavaScript',
+        icon: '/skills/javascript.svg'
+      },
+      {
+        name: 'TypeScript',
+        icon: '/skills/typescript.svg'
+      },
+      {
+        name: 'React',
+        icon: '/skills/react.svg'
+      },
+      {
+        name: 'TailwindCSS',
+        icon: '/skills/tailwindcss.svg'
+      },
+      {
+        name: 'Next.js',
+        icon: '/skills/nextdotjs.svg'
+      },
+      {
+        name: 'Vite',
+        icon: '/skills/vite.svg'
+      }
+    ]
   },
   {
-    src: '/skills/typescript.svg',
-    name: 'Typescript'
+    title: 'Back-End',
+    description: 'Here’s what I use to handle server-side logic and databases:',
+    techStacks: [
+      {
+        name: 'TypeScript',
+        icon: '/skills/typescript.svg'
+      },
+      {
+        name: 'Node.js',
+        icon: '/skills/nodejs.svg'
+      },
+      {
+        name: 'Supabase',
+        icon: '/skills/supabase.svg'
+      },
+      {
+        name: 'Prisma',
+        icon: '/skills/prisma.svg'
+      }
+    ]
   },
   {
-    src: '/skills/react.svg',
-    name: 'React'
-  },
-  {
-    src: '/skills/tailwindcss.svg',
-    name: 'TailwindCSS'
-  },
-  {
-    src: '/skills/nextdotjs.svg',
-    name: 'Next.js'
-  },
-  {
-    src: '/skills/supabase.svg',
-    name: 'Supabase'
-  },
-  {
-    src: '/skills/prisma.svg',
-    name: 'Prisma'
+    title: 'Other Tools',
+    description:
+      'These tools help me work efficiently and manage my projects effectively:',
+    techStacks: [
+      {
+        name: 'Github',
+        icon: '/skills/github.svg'
+      },
+      {
+        name: 'Jest',
+        icon: '/skills/jest.svg'
+      },
+      {
+        name: 'Figma',
+        icon: '/skills/figma.svg'
+      },
+      {
+        name: 'Postman',
+        icon: '/skills/postman.svg'
+      }
+    ]
   }
 ]
