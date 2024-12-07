@@ -12,7 +12,7 @@ export default function ProjectItem(project: IProject) {
 
   return (
     <div className='flex w-full flex-col gap-4'>
-      <div className='flex w-full flex-col justify-center gap-8 py-4'>
+      <div className='flex w-full flex-col items-center justify-center gap-8 py-4'>
         <Title className='xl:hidden'>{title}</Title>
         <div className='flex flex-col items-center justify-center gap-4 xl:flex-row xl:gap-8'>
           <ImageCollage images={images} />
