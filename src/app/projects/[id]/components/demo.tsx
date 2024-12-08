@@ -17,6 +17,7 @@ export default function Demo({ title, src }: DemoProps) {
           src={src}
           title={`${title ? `${title} - Demo` : 'App Demo'}`}
           loading='lazy'
+          allowFullScreen
           className='h-[180px] w-[320px] xs:h-[213.75px] xs:w-[380px] md:h-[405px] md:w-[720px] lg:h-[432px] lg:w-[768px]'
         />
       ) : (

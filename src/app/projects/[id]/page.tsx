@@ -48,7 +48,10 @@ export default async function ProjectDetailPage({
         </div>
       </div>
       <HorizontalLine animationDelay='1000' />
-      <main id='projectDetail' className='relative grid gap-8 lg:grid-cols-4'>
+      <main
+        id='projectDetail'
+        className='relative grid gap-8 pb-8 lg:grid-cols-4'
+      >
         <div className='col-span-3 flex w-full flex-col gap-8'>
           <div className='flex flex-col gap-12'>
             <Explanation>{project?.explanation}</Explanation>

@@ -1,7 +1,7 @@
-import Description from '@/components/description'
+import React from 'react'
+import Description from '../components/description'
 import Header from '@/components/header'
 import Section from '@/components/section'
-import React from 'react'
 import SkillCard from './skill-card'
 import { skills } from '@/lib/data/skills'
 

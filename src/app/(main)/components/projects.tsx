@@ -1,4 +1,4 @@
-import Description from '@/components/description'
+import Description from '../components/description'
 import Header from '@/components/header'
 import Section from '@/components/section'
 import ProjectItem from './project-item'

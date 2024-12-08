@@ -26,16 +26,20 @@ export const skills: ISkill[] = [
         icon: '/skills/react.svg'
       },
       {
+        name: 'Redux',
+        icon: '/skills/redux.svg'
+      },
+      {
         name: 'TailwindCSS',
         icon: '/skills/tailwindcss.svg'
       },
       {
-        name: 'Next.js',
-        icon: '/skills/nextdotjs.svg'
-      },
-      {
         name: 'Vite',
         icon: '/skills/vite.svg'
+      },
+      {
+        name: 'Next.js',
+        icon: '/skills/nextdotjs.svg'
       }
     ]
   },

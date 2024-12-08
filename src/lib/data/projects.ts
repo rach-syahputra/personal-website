@@ -193,7 +193,7 @@ export const projects: IProject[] = [
       }
     ],
     description:
-      'Discussion forum web application for conversations across Programming categories. This project was built for "Become React Developer Expert" submission by Dicoding Academy.',
+      'Discussion forum web application for conversations across Programming categories.',
     link: {
       live: 'https://codialogue-app.vercel.app/',
       code: 'https://github.com/rach-syahputra/codialogue'

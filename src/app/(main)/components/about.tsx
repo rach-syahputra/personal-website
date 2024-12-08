@@ -1,5 +1,6 @@
 import React from 'react'
-import Description from '@/components/description'
+import Link from 'next/link'
+import Description from '../components/description'
 import Header from '@/components/header'
 import Section from '@/components/section'
 
@@ -21,16 +22,20 @@ export default function About() {
         <Description>
           I build modern web application to{' '}
           <span className='font-bold text-light'>solve users problem</span>.
-          However, as a music enthusiast, Building music platforms is where my
+          However, as a music enthusiast, building music platforms is where my
           passion truly shines, as it allows me to combine my love for music
           with my web development skills to create something enjoyable.
         </Description>
 
         <Description>
           I am currently enhancing my expertise in full-stack web development at{' '}
-          <span className='font-bold text-light'>
+          <Link
+            href='https://www.purwadhika.com/'
+            target='_blank'
+            className='font-bold text-light hover:underline'
+          >
             Purwadhika Digital Technology School
-          </span>
+          </Link>
           . Proudly building practical skills through real-world projects and
           collaborative learning, I thrive in team environments where ideas are
           shared, and solutions are crafted together.

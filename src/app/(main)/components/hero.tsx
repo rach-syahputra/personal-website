@@ -1,6 +1,6 @@
 import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
-import Description from '@/components/description'
+import Description from '../components/description'
 import Header from '@/components/header'
 import Section from '@/components/section'
 import Image from 'next/image'

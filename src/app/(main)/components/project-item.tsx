@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 import Badge from '@/app/(main)/components/badge'
 import Button from '@/components/button'
-import Description from '@/components/description'
+import Description from '../components/description'
 import Title from '@/components/title'
 import ImageCollage from './image-collage'
 import { IProject } from '@/lib/data/projects'
@@ -11,8 +11,8 @@ export default function ProjectItem(project: IProject) {
   const { id, title, images, techStacks, description, link } = project
 
   return (
-    <div className='flex w-full flex-col gap-4'>
-      <div className='flex w-full flex-col items-center justify-center gap-8 py-4'>
+    <div className='flex flex-col gap-4'>
+      <div className='flex w-full flex-col items-center justify-center gap-8 py-4 xl:items-start'>
         <Title className='xl:hidden'>{title}</Title>
         <div className='flex flex-col items-center justify-center gap-4 xl:flex-row xl:gap-8'>
           <ImageCollage images={images} />
