@@ -7,6 +7,7 @@ import {
   ChevronDown,
   FolderCode,
   Home,
+  MessageCircle,
   User,
   Wrench
 } from 'lucide-react'
@@ -21,7 +22,8 @@ export default function MobileNavbar() {
     about: <User color='#888888' size={18} />,
     skills: <Wrench color='#888888' size={18} />,
     projects: <FolderCode color='#888888' size={18} />,
-    experiences: <BriefcaseBusiness color='#888888' size={18} />
+    experiences: <BriefcaseBusiness color='#888888' size={18} />,
+    testimonials: <MessageCircle color='#888888' size={18} />
   }
 
   return (

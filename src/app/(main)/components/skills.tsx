@@ -7,7 +7,7 @@ import { skills } from '@/lib/data/skills'
 
 export default function Skills() {
   return (
-    <Section id='skills'>
+    <Section id='skills' className='py-8'>
       <div className='flex flex-col gap-4'>
         <Header>Skills</Header>
         <Description>

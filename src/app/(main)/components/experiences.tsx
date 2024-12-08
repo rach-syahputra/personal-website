@@ -7,7 +7,7 @@ import { experiences } from '@/lib/data/experiences'
 
 export default function Experiences() {
   return (
-    <Section id='experiences' className='gap-16 py-16'>
+    <Section id='experiences' className='py-8 lg:py-16'>
       <div className='flex flex-col gap-4'>
         <Header>Experiences</Header>
         <Description>

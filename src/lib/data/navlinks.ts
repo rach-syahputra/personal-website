@@ -29,5 +29,10 @@ export const navlinks: NavLinks[] = [
     id: 'experiences',
     name: 'Experiences',
     href: '#experiences'
+  },
+  {
+    id: 'testimonials',
+    name: 'Testimonials',
+    href: '#testimonials'
   }
 ]
