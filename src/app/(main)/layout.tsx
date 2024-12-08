@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
 import Navbar from '@/components/navbar'
-import '../globals.css'
 import MobileNavbar from '@/components/mobile-navbar'
+import '../globals.css'
 
 const geist = Geist({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -13,8 +13,8 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: 'Rachmat Syahputra',
-  description: 'Rachmat Syahputra`s portfolio website',
-  icons: '/r-icon.jpg'
+  description: "Rachmat Agung Syahputra's personal website",
+  icons: '/app-icon.png'
 }
 
 export default function RootLayout({
