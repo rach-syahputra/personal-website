@@ -60,7 +60,7 @@ export default function Navbar() {
         { 'opacity-100': show }
       )}
     >
-      <ul className=':h-8 flex items-center gap-4 rounded-md bg-dark bg-opacity-90 px-3 shadow-default lg:h-9'>
+      <ul className=':h-8 flex items-center gap-6 rounded-md bg-dark bg-opacity-90 px-3 shadow-default lg:h-9'>
         {navlinks?.map((navlink) => (
           <li key={navlink.id}>
             <Link

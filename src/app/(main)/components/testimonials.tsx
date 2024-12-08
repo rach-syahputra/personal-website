@@ -16,7 +16,7 @@ export default function Testimonials() {
         </Description>
       </div>
 
-      <div className='grid max-w-screen-lg gap-8 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-8'>
+      <div className='grid max-w-screen-lg gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
         {testimonials.map((testimonial, index) => (
           <TestimonialCard key={index} index={index} {...testimonial} />
         ))}

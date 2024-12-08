@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
+import { Github, Instagram, Linkedin } from 'lucide-react'
 import Link from 'next/link'
 import Description from '../components/description'
 import Header from '@/components/header'
@@ -37,10 +37,6 @@ export default function Hero() {
         >
           <Linkedin color='#888888' size={28} className='lg:hidden' />
           <Linkedin color='#888888' size={32} className='hidden lg:block' />
-        </Link>
-        <Link href='mailto:rach.syahputra@gmail.com' target='_blank'>
-          <Mail color='#888888' size={28} className='lg:hidden' />
-          <Mail color='#888888' size={32} className='hidden lg:block' />
         </Link>
         <Link href='https://www.instagram.com/rach.syahputra/' target='_blank'>
           <Instagram color='#888888' size={28} className='lg:hidden' />

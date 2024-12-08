@@ -6,7 +6,7 @@ import Section from '@/components/section'
 
 export default function About() {
   return (
-    <Section id='about' className='py-8'>
+    <Section id='about' className='pb-8'>
       <div className='flex w-full flex-col items-center justify-center gap-8'>
         <Header>About Me</Header>
         <Description>
