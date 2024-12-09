@@ -16,7 +16,7 @@ export interface IProject {
   }
   explanation: string
   responsibilities: string[]
-  demoSrc: string
+  screenshots: string[]
 }
 
 export const projects: IProject[] = [
@@ -64,7 +64,7 @@ export const projects: IProject[] = [
       'Managed the entire development lifecycle, from conceptualization to deployment.',
       'Deployed and hosted the application on Vercel, utilizing its seamless integration with Next.js for fast and efficient deployment.'
     ],
-    demoSrc: 'https://www.youtube.com/embed/Ul-dmj75EF8?si=n1L5VS7mtcIT1e2Z'
+    screenshots: ['/projects/taskly-lg.webp', '/projects/taskly-dark-lg.webp']
   },
   {
     id: 'gojeks-landing-page-clone',
@@ -106,7 +106,7 @@ export const projects: IProject[] = [
       'Applied React for component-based architecture to enhance maintainability and scalability.',
       'Managed project deployment and hosting, ensuring a smooth launch and ongoing updates.'
     ],
-    demoSrc: 'https://www.youtube.com/embed/zqj-8HGAsvw?si=vFJbnfnnmt_P1XBC'
+    screenshots: ['/projects/gojek-lg.webp']
   },
   {
     id: 'harmoniqa',
@@ -152,7 +152,7 @@ export const projects: IProject[] = [
       'Developed core features allowing users to upload, like, and listen to songs uploaded by others.',
       'Ensured responsive design and cross-browser compatibility for a consistent experience across devices.'
     ],
-    demoSrc: 'https://www.youtube.com/embed/6gDbHob3PHI?si=z976s7la0VNr7oX2'
+    screenshots: ['/projects/harmoniqa-lg.webp']
   },
   {
     id: 'codialogue',
@@ -209,6 +209,6 @@ export const projects: IProject[] = [
       'Used Storybook to develop and test reusable UI components in isolation, ensuring consistent design across the app.',
       'Applied Cypress for end-to-end testing to verify the functionality and performance of the app across various user interactions.'
     ],
-    demoSrc: 'https://www.youtube.com/embed/6_KKZU_AzvM?si=PADh7s0I3x82xfqJ'
+    screenshots: ['/projects/codialogue-lg.webp']
   }
 ]

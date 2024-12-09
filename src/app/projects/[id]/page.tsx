@@ -9,6 +9,7 @@ import Responsibilities from './components/responsibilites'
 import TechStacks from './components/tech-stacks'
 import Sidebar from './components/sidebar'
 import { projects } from '@/lib/data/projects'
+import Screenshots from './components/screenshots'
 
 export default async function ProjectDetailPage({
   params
@@ -80,7 +81,7 @@ export default async function ProjectDetailPage({
                 ))}
               </ul>
             </TechStacks>
-            {/* <Demo title={project?.title || ''} src={project?.demoSrc || ''} /> */}
+            <Screenshots screenshots={project?.screenshots || []} />
           </div>
         </div>
         <Sidebar />

@@ -24,8 +24,8 @@ export default function Sidebar() {
       name: 'Tech Stacks Used'
     },
     {
-      id: 'appDemo',
-      name: 'App Demo'
+      id: 'screenshots',
+      name: 'App Screenshots'
     }
   ]
 
