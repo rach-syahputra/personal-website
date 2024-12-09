@@ -5,7 +5,7 @@ import MobileNavbar from '@/components/mobile-navbar'
 import '../globals.css'
 
 const geist = Geist({
-  weight: ['100', '300', '400', '500', '700', '900'],
+  weight: ['400', '500', '700'],
   subsets: ['latin'],
   style: ['normal'],
   variable: '--font-geist',
