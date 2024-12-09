@@ -24,9 +24,9 @@ export const projects: IProject[] = [
     id: 'taskly',
     title: 'Taskly',
     images: [
-      '/projects/taskly-sm.png',
-      '/projects/taskly-md.png',
-      '/projects/taskly-lg.png'
+      '/projects/taskly-sm.webp',
+      '/projects/taskly-md.webp',
+      '/projects/taskly-lg.webp'
     ],
     techStacks: [
       {
@@ -70,9 +70,9 @@ export const projects: IProject[] = [
     id: 'gojeks-landing-page-clone',
     title: "Gojek\'s Landing Page Clone",
     images: [
-      '/projects/gojek-sm.png',
-      '/projects/gojek-md.png',
-      '/projects/gojek-lg.png'
+      '/projects/gojek-sm.webp',
+      '/projects/gojek-md.webp',
+      '/projects/gojek-lg.webp'
     ],
     techStacks: [
       {
@@ -112,9 +112,9 @@ export const projects: IProject[] = [
     id: 'harmoniqa',
     title: 'Harmoniqa',
     images: [
-      '/projects/harmoniqa-sm.png',
-      '/projects/harmoniqa-md.png',
-      '/projects/harmoniqa-lg.png'
+      '/projects/harmoniqa-sm.webp',
+      '/projects/harmoniqa-md.webp',
+      '/projects/harmoniqa-lg.webp'
     ],
     techStacks: [
       {
@@ -158,9 +158,9 @@ export const projects: IProject[] = [
     id: 'codialogue',
     title: 'CoDialogue',
     images: [
-      '/projects/codialogue-sm.png',
-      '/projects/codialogue-md.png',
-      '/projects/codialogue-lg.png'
+      '/projects/codialogue-sm.webp',
+      '/projects/codialogue-md.webp',
+      '/projects/codialogue-lg.webp'
     ],
     techStacks: [
       {
