@@ -27,18 +27,27 @@ export default function Hero() {
       </Description>
       <HorizontalLine animationDelay='1100' />
       <div className='flex gap-8 md:gap-6'>
-        <Link href='https://github.com/rach-syahputra/' target='_blank'>
+        <Link
+          href='https://github.com/rach-syahputra/'
+          aria-label="Go to Rachmat's github profile"
+          target='_blank'
+        >
           <Github color='#888888' size={28} className='lg:hidden' />
           <Github color='#888888' size={32} className='hidden lg:block' />
         </Link>
         <Link
           href='https://www.linkedin.com/in/rachmat-syahputra/'
+          aria-label="Go to Rachmat's linkedin profile"
           target='_blank'
         >
           <Linkedin color='#888888' size={28} className='lg:hidden' />
           <Linkedin color='#888888' size={32} className='hidden lg:block' />
         </Link>
-        <Link href='https://www.instagram.com/rach.syahputra/' target='_blank'>
+        <Link
+          href='https://www.instagram.com/rach.syahputra/'
+          aria-label="Go to Rachmat's instagram profile"
+          target='_blank'
+        >
           <Instagram color='#888888' size={28} className='lg:hidden' />
           <Instagram color='#888888' size={32} className='hidden lg:block' />
         </Link>

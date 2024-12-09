@@ -32,7 +32,7 @@ export default function TestimonialCard({
             <Image src={client.imgSrc} alt='client icon' fill />
           </div>
           <figcaption className='flex flex-col'>
-            <h3 className='text-sm font-bold text-light'>{client.name}</h3>
+            <span className='text-sm font-bold text-light'>{client.name}</span>
             <p className='text-xs text-gray'>
               {client.jobTitle} at {client.companyName}
             </p>
