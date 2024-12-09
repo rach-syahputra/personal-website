@@ -8,7 +8,8 @@ const geist = Geist({
   weight: ['100', '300', '400', '500', '700', '900'],
   subsets: ['latin'],
   style: ['normal'],
-  variable: '--font-geist'
+  variable: '--font-geist',
+  display: 'swap'
 })
 
 export const metadata: Metadata = {

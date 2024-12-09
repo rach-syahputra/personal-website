@@ -8,7 +8,9 @@ const nextConfig: NextConfig = {
         hostname: 'youtu.be'
       }
     ]
-  }
+  },
+  reactStrictMode: true,
+  experimental: { optimizeCss: true }
 }
 
 export default nextConfig

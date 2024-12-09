@@ -13,7 +13,7 @@ export default function Hero() {
         <Image
           src='/professional-photo.png'
           alt='professional photo'
-          quality={60}
+          quality={50}
           fill
         />
       </div>
