@@ -10,7 +10,12 @@ export default function Hero() {
   return (
     <Section id='home' className='relative lg:pt-8'>
       <div className='relative h-36 w-36 overflow-hidden rounded-full bg-dark-hover bg-opacity-10 shadow-photo lg:h-[200px] lg:w-[200px]'>
-        <Image src='/professional-photo.png' alt='professional photo' fill />
+        <Image
+          src='/professional-photo.png'
+          alt='professional photo'
+          quality={60}
+          fill
+        />
       </div>
       <div className='flex flex-col gap-2'>
         <Description>Hello, my name is</Description>
