@@ -7,7 +7,6 @@ import HorizontalLine from '@/components/horizontal-line'
 import Explanation from './components/explanation'
 import Responsibilities from './components/responsibilites'
 import TechStacks from './components/tech-stacks'
-import Demo from './components/demo'
 import Sidebar from './components/sidebar'
 import { projects } from '@/lib/data/projects'
 
@@ -81,7 +80,7 @@ export default async function ProjectDetailPage({
                 ))}
               </ul>
             </TechStacks>
-            <Demo title={project?.title || ''} src={project?.demoSrc || ''} />
+            {/* <Demo title={project?.title || ''} src={project?.demoSrc || ''} /> */}
           </div>
         </div>
         <Sidebar />
