@@ -13,8 +13,9 @@ export default function Hero() {
         <Image
           src='/professional-photo.webp'
           alt='professional photo'
-          quality={50}
           fill
+          sizes='144px, (min-width: 1024px) 200px'
+          priority
         />
       </div>
       <div className='flex flex-col gap-2'>

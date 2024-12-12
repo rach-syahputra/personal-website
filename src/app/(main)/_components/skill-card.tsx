@@ -19,7 +19,7 @@ export default function SkillCard({ title, description, techStacks }: ISkill) {
                 key={index}
                 className='group relative flex flex-col items-center justify-center'
               >
-                <div className='h-6 w-6 lg:h-8 lg:w-8'>
+                <div className='relative h-6 w-6 lg:h-8 lg:w-8'>
                   <Image src={techStack.icon} alt='skill icon' fill />
                 </div>
                 <span className='invisible absolute -top-11 select-none rounded-full bg-dark px-3 py-2 text-sm opacity-0 transition-all duration-300 ease-in-out group-hover:visible group-hover:-translate-y-1 group-hover:opacity-100'>
