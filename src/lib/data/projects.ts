@@ -12,7 +12,6 @@ export interface IProject {
   description: string
   link: {
     live: string
-    code?: string
   }
   explanation: string
   responsibilities: string[]
@@ -52,8 +51,7 @@ export const projects: IProject[] = [
     ],
     description: `An offline-friendly and minimalist todo-list web application that offers task management, with all data securely stored using the browser's localStorage.`,
     link: {
-      live: 'https://taskly-minimalist-beta.vercel.app/',
-      code: 'https://github.com/rach-syahputra/taskly'
+      live: 'https://taskly-minimalist-beta.vercel.app/'
     },
     explanation:
       'Taskly empowers users to efficiently manage their daily tasks directly from their web browsers. Designed with simplicity in mind, this platform features a clean, minimalist design and a seamless user interface for an effortless experience. Taskly provides both light and dark themes, allowing users to customize their experience to suit their preferences. Taskly leverages localStorage to securely save tasks, ensuring data persistence without requiring a server. It’s the perfect tool for staying organized and productive, anytime and anywhere.',
@@ -94,8 +92,7 @@ export const projects: IProject[] = [
     ],
     description: "A pixel-perfect replica of Gojek's landing page.",
     link: {
-      live: 'https://gojek-landing-page-clone.vercel.app/',
-      code: 'https://github.com/rach-syahputra/gojek-landing-page-clone'
+      live: 'https://gojek-landing-page-clone.vercel.app/'
     },
     explanation:
       "The Gojek Landing Page Clone is a fully responsive replica of Gojek's official website landing page, meticulously crafted to match the original design with 100% accuracy. This project was built to enhance my skills in React and TailwindCSS, focusing on creating pixel-perfect designs and mastering modern web development practices. Through this project, I gained hands-on experience in slicing designs, implementing responsiveness, and working with advanced styling frameworks.",
@@ -141,8 +138,7 @@ export const projects: IProject[] = [
     description:
       'An innovative music platform where user can discover, stream, and enjoy music uploaded by a vibrant community.',
     link: {
-      live: 'https://harmoniqa.vercel.app/',
-      code: 'https://github.com/rach-syahputra/harmoniqa'
+      live: 'https://harmoniqa.vercel.app/'
     },
     explanation:
       'Harmoniqa is a music platform built with Next.js that allows users to upload, like, and listen to songs shared by others. Powered by Supabase for song storage and authentication, users can sign up using their email or GitHub account. Originally created to share and discover music among friends, the platform quickly evolved into a vision for a global community. Inspired by Spotify, Harmoniqa aims to create a space where users can share their favorite songs',
@@ -195,8 +191,7 @@ export const projects: IProject[] = [
     description:
       'Discussion forum web application for conversations across Programming categories.',
     link: {
-      live: 'https://codialogue-app.vercel.app/',
-      code: 'https://github.com/rach-syahputra/codialogue'
+      live: 'https://codialogue-app.vercel.app/'
     },
     explanation:
       "CoDialogue is a forum web application built with React, designed for programming discussions. Users can interact with threads by adding comments, up-voting, and down-voting, while also viewing leaderboards and filtering threads by category. Developed as part of the 'Become React Developer Expert' submission by Dicoding Academy, CoDialogue uses a REST API provided by Dicoding to handle user data and forum content.",

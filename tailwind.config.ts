@@ -30,6 +30,5 @@ export default {
         xs: '400px'
       }
     }
-  },
-  plugins: [require('tailwindcss-animate')]
+  }
 } satisfies Config

@@ -7,7 +7,8 @@ const geist = Geist({
   subsets: ['latin'],
   style: ['normal'],
   variable: '--font-geist',
-  display: 'swap'
+  display: 'swap',
+  adjustFontFallback: false
 })
 
 export const metadata: Metadata = {
@@ -22,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
-      <body className={`${geist.variable} bg-dark text-light antialiased`}>
+    <html lang='en' className={`${geist.variable}`}>
+      <body className='bg-dark font-[family-name:var(--font-geist)] text-light antialiased'>
         {children}
       </body>
     </html>
