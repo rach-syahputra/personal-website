@@ -4,12 +4,12 @@ import { ArrowLeft, ArrowUpRight } from 'lucide-react'
 import Button from '@/components/button'
 import Header from '@/components/header'
 import HorizontalLine from '@/components/horizontal-line'
-import Explanation from './components/explanation'
-import Responsibilities from './components/responsibilites'
-import TechStacks from './components/tech-stacks'
-import Sidebar from './components/sidebar'
+import Explanation from './_components/explanation'
+import Responsibilities from './_components/responsibilites'
+import TechStacks from './_components/tech-stacks'
+import Sidebar from './_components/sidebar'
 import { projects } from '@/lib/data/projects'
-import Screenshots from './components/screenshots'
+import Screenshots from './_components/screenshots'
 
 export default async function ProjectDetailPage({
   params

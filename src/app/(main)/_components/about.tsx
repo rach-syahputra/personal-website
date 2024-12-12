@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Description from '../components/description'
+import Description from './description'
 import Header from '@/components/header'
 import Section from '@/components/section'
 

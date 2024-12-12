@@ -1,5 +1,5 @@
 import React from 'react'
-import Description from '../components/description'
+import Description from './description'
 import Header from '@/components/header'
 import Section from '@/components/section'
 import SkillCard from './skill-card'

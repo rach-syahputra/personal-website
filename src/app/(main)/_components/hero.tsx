@@ -1,9 +1,9 @@
-import { Github, Instagram, Linkedin } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
-import Description from '../components/description'
+import { Github, Instagram, Linkedin } from 'lucide-react'
+import Description from './description'
 import Header from '@/components/header'
 import Section from '@/components/section'
-import Image from 'next/image'
 import HorizontalLine from '@/components/horizontal-line'
 
 export default function Hero() {
