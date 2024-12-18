@@ -19,7 +19,6 @@ export default function Screenshots({ screenshots }: ScreenshotProps) {
               key={index}
               src={screenshot}
               alt='screenshot'
-              loading='lazy'
               width={768}
               height={576}
             />

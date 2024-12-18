@@ -5,11 +5,28 @@ import Description from './description'
 import Button from '@/components/button'
 import Title from '@/components/title'
 import ImageCollage from './image-collage'
-import { IProject } from '@/lib/data/projects'
+import { Colors } from '@/lib/data/projects'
 
-export default function ProjectItem(project: IProject) {
-  const { id, title, images, techStacks, description, link } = project
+interface ProjectItemProps {
+  slug: string
+  title: string
+  techStacks: {
+    name: string
+    color: Colors
+  }[]
+  description: string
+  images: [string, string, string]
+  link: string
+}
 
+export default function ProjectItem({
+  slug,
+  title,
+  techStacks,
+  description,
+  images,
+  link
+}: ProjectItemProps) {
   return (
     <div className='flex flex-col gap-4'>
       <div className='flex w-full flex-col items-center justify-center gap-8 py-4 xl:items-start'>
@@ -29,7 +46,7 @@ export default function ProjectItem(project: IProject) {
               <Description className='xl:text-left'>{description}</Description>
             </div>
             <div className='flex gap-4'>
-              <Link href={link.live} target='_blank'>
+              <Link href={link} target='_blank'>
                 <Button className='group flex items-center justify-center gap-2'>
                   Live Site{' '}
                   <ArrowUpRight
@@ -38,7 +55,7 @@ export default function ProjectItem(project: IProject) {
                   />
                 </Button>
               </Link>
-              <Link href={`projects/${id}`}>
+              <Link href={`projects/${slug}`}>
                 <Button
                   variant='secondary'
                   className='group flex items-center justify-center gap-2'
