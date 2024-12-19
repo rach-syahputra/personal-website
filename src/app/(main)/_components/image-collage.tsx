@@ -29,7 +29,13 @@ export default function ImageCollage({ images }: ImageCollageProps) {
           key={index}
           className={`${styles.left[index]} ${styles.top[index]} ${styles.rotate[index]} ${styles.width[index]} ${styles.height} absolute overflow-hidden rounded-md bg-slate-400 shadow-default transition-all duration-300 ease-in-out group-hover:scale-105`}
         >
-          <Image src={image} alt='project image' sizes='100' fill />
+          <Image
+            src={image}
+            alt='project image'
+            sizes='100'
+            style={{ objectFit: 'cover' }}
+            fill
+          />
         </div>
       ))}
     </div>

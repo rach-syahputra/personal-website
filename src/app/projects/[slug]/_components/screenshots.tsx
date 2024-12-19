@@ -19,8 +19,10 @@ export default function Screenshots({ screenshots }: ScreenshotProps) {
               key={index}
               src={screenshot}
               alt='screenshot'
+              style={{ objectFit: 'cover' }}
               width={768}
               height={576}
+              className='h-auto w-full'
             />
           ))
         ) : (
