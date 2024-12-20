@@ -17,7 +17,8 @@ export default function Projects() {
     try {
       const res = await contentfulClient.getEntries<TypeProjectsSkeleton>({
         content_type: 'projects',
-        order: ['-fields.id']
+        order: ['-fields.id'],
+        limit: 10
       })
 
       setProjects(

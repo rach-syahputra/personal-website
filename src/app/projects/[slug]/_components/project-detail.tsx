@@ -19,19 +19,6 @@ interface ProjectDetailProps {
   slug: string
 }
 
-// interface IProjectDetail {
-//   title: string
-//   techStacks: {
-//     name: string
-//     color: Colors
-//   }[]
-//   description: string
-//   explanation: string
-//   responsibilities: string[]
-//   link: string
-//   screenshots: string[]
-// }
-
 export default function ProjectDetail({ slug }: ProjectDetailProps) {
   const [project, setProject] = useState<any | null>(null)
 
@@ -57,10 +44,6 @@ export default function ProjectDetail({ slug }: ProjectDetailProps) {
   useEffect(() => {
     getProject()
   }, [])
-
-  useEffect(() => {
-    console.log('project', project)
-  }, [project])
 
   return (
     <div className='flex flex-col gap-8'>

@@ -20,14 +20,14 @@ export interface IContentfulAsset {
 }
 
 export interface TypeProjectsFields {
-  title: EntryFieldTypes.Symbol
   techStacks: EntryFieldTypes.Object
+  responsibilities: EntryFieldTypes.Array<EntryFieldTypes.Symbol>
+  title: EntryFieldTypes.Symbol
   images: EntryFieldTypes.Array<EntryFieldTypes.AssetLink>
   description: EntryFieldTypes.Text
   explanation: EntryFieldTypes.Text
   screenshots: EntryFieldTypes.Array<EntryFieldTypes.AssetLink>
   id: EntryFieldTypes.Integer
-  responsibilities: EntryFieldTypes.Array<EntryFieldTypes.Symbol>
   slug?: EntryFieldTypes.Symbol
   link: EntryFieldTypes.Symbol
 }
