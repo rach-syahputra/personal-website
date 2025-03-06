@@ -25,16 +25,16 @@ export const navlinks: NavLinks[] = [
     name: 'Projects',
     href: '#projects'
   },
-  {
-    id: 'experiences',
-    name: 'Experiences',
-    href: '#experiences'
-  },
-  {
-    id: 'testimonials',
-    name: 'Testimonials',
-    href: '#testimonials'
-  },
+  // {
+  //   id: 'experiences',
+  //   name: 'Experiences',
+  //   href: '#experiences'
+  // },
+  // {
+  //   id: 'testimonials',
+  //   name: 'Testimonials',
+  //   href: '#testimonials'
+  // },
   {
     id: 'contact',
     name: 'Contact',
