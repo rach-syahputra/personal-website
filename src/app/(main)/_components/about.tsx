@@ -21,14 +21,8 @@ export default function About() {
 
         <Description>
           I build modern web application to{' '}
-          <span className='font-bold text-light'>solve users problem</span>.
-          However, as a music enthusiast, building music platforms is where my
-          passion truly shines, as it allows me to combine my love for music
-          with my web development skills to create something enjoyable.
-        </Description>
-
-        <Description>
-          I am currently enhancing my expertise in full-stack web development at{' '}
+          <span className='font-bold text-light'>solve users problem</span>. I
+          graduated from{' '}
           <Link
             href='https://www.purwadhika.com/'
             target='_blank'
@@ -36,9 +30,9 @@ export default function About() {
           >
             Purwadhika Digital Technology School
           </Link>
-          . Proudly building practical skills through real-world projects and
-          collaborative learning, I thrive in team environments where ideas are
-          shared, and solutions are crafted together.
+          , where I gained real-world experience through hands-on projects and
+          teamwork. I enjoy turning ideas into useful products and working with
+          others to solve real problems.
         </Description>
       </div>
     </Section>

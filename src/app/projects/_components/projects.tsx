@@ -2,28 +2,25 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
-import { ArrowUpRight } from 'lucide-react'
 
 import contentfulClient from '@/contentful/contentful-client'
 import { IContentfulAsset, TypeProjectsSkeleton } from '@/contentful/types'
+import ProjectItem from '@/app/(main)/_components/project-item'
+import ProjectItemSkeleton from '@/app/(main)/_components/project-item-skeleton'
 import Header from '@/components/header'
 import Section from '@/components/section'
-import Button from '@/components/button'
-import Description from './description'
-import ProjectItemSkeleton from './project-item-skeleton'
-import ProjectItem from './project-item'
+import Description from '@/components/description'
+import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
 
 export default function Projects() {
-  const router = useRouter()
   const [projects, setProjects] = useState<any[] | null>(null)
 
   const getProjects = async () => {
     try {
       const res = await contentfulClient.getEntries<TypeProjectsSkeleton>({
         content_type: 'projects',
-        order: ['-fields.id'],
-        limit: 4
+        order: ['-fields.id']
       })
 
       setProjects(
@@ -49,6 +46,17 @@ export default function Projects() {
 
   return (
     <Section id='projects' className='py-8 lg:gap-24 lg:py-16'>
+      <Link
+        href='/'
+        className='group relative flex items-center gap-2 text-gray transition-all duration-300 ease-in-out hover:underline lg:text-lg'
+      >
+        <ArrowLeft
+          color='#888888'
+          size={18}
+          className='transition-all duration-300 ease-in-out group-hover:-translate-x-1'
+        />
+        Back to main page
+      </Link>
       <div className='flex flex-col gap-4'>
         <Header>Projects</Header>
         <Description>
@@ -59,21 +67,9 @@ export default function Projects() {
 
       <div className='flex w-full flex-col gap-8 lg:gap-16 xl:gap-24'>
         {projects && projects.length > 0 ? (
-          <>
-            {projects?.map((project) => (
-              <ProjectItem key={project.slug} {...project} />
-            ))}
-            <Button
-              onClick={() => router.push('/projects')}
-              className='group mx-auto flex w-fit items-center justify-center gap-2'
-            >
-              View All Projects{' '}
-              <ArrowUpRight
-                size={16}
-                className='transition-all duration-300 ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5'
-              />
-            </Button>
-          </>
+          projects?.map((project) => (
+            <ProjectItem key={project.slug} {...project} />
+          ))
         ) : (
           <>
             <ProjectItemSkeleton />
